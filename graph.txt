@@ -1,0 +1,34 @@
+<div id="myPlot" style="width:100%;max-width:900px"></div>
+<?php
+ $result1=$typeObj->selectAllDataForAdmin();
+ $sno=1;
+ $myArray = [];
+ while($row1=mysqli_fetch_assoc($result1))             
+    {
+        array_push($myArray, $row1['TypeName']);
+
+    }
+    $fruitsString = implode(", ", $myArray);
+?>
+<h1><?php echo $fruitsString?><h1>
+    <h1>bib</h1>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script>
+        console.log(<?php echo json_encode($fruitsString)?>);
+        console.log(5165);
+        
+const xArray = ["", "France", "Spain", "USA", "Argentina","ed"];
+const yArray = [55, 49, 44, 24, 15, 5];
+
+const data = [{
+  x:xArray,
+  y:yArray,
+  type:"bar",
+  orientation:"v",
+  marker: {color:"rgba(0,0,255,0.6)"}
+}];
+
+const layout = {title:"Product Types"};
+
+Plotly.newPlot("myPlot", data, layout);
+</script>

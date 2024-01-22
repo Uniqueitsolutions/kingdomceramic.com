@@ -1,0 +1,10 @@
+
+RewriteEngine on
+
+RewriteRule ^FinishApi                       selectFinishForDicasaClient.php   [NC,L]
+RewriteRule ^SizeApi                   selectSizeForDicasaClient.php    [NC,L]
+RewriteRule ^ProductApi             selectProductForDicasaClient.php   [NC,L]
+RewriteRule ^LookApi   selectLookForDicasaClient.php [NC,L]
+RewriteRule ^SpaceApi  selectSpaceForDicasaClient.php [NC,L]
+RewriteRule ^TypeApi   selectTypeForDicasaClient.php [NC,L]
+RewriteRule ^SelectedProductApi                       SelectForPrticularProduct.php [NC,L]

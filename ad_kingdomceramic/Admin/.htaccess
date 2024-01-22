@@ -1,0 +1,40 @@
+RewriteEngine on
+
+RewriteRule ^Dashboard                index.php [NC,L]
+RewriteRule ^TypeAddEdit                typeaddedit.php [NC,L]
+RewriteRule ^Type                type.php [NC,L]
+
+RewriteRule ^SizeAddEdit                sizeaddedit.php [NC,L]
+RewriteRule ^Size                size.php [NC,L]
+RewriteRule ^FinishAddEdit                finishaddedit.php [NC,L]
+RewriteRule ^Finish                finish.php [NC,L]
+RewriteRule ^LookAddEdit                lookaddedit.php [NC,L]
+RewriteRule ^Look                look.php [NC,L]
+RewriteRule ^SpaceAddEdit                spaceaddedit.php [NC,L]
+RewriteRule ^Space                space.php [NC,L]
+RewriteRule ^ProductAddEdit                productaddedit.php [NC,L]
+RewriteRule ^Product                product.php [NC,L]
+RewriteRule ^RegistrationCatalouge                registration_catalouge.php [NC,L]
+RewriteRule ^CatalougeAddEdit                catalougeaddedit.php [NC,L]
+RewriteRule ^Catalouge                catalouge.php [NC,L]
+RewriteRule ^BlogAddEdit                blogaddedit.php [NC,L]
+RewriteRule ^Blog                blog.php [NC,L]
+RewriteRule ^SliderAddEdit                slideraddedit.php [NC,L]
+RewriteRule ^Slider                slider.php [NC,L]
+RewriteRule ^ContactAddEdit                contactaddedit.php [NC,L]
+RewriteRule ^Contact                contact.php [NC,L]
+RewriteRule ^UserAddEdit                useraddedit.php [NC,L]
+RewriteRule ^User                user.php [NC,L]
+RewriteRule ^Inquiry                inquiry.php [NC,L]
+RewriteRule ^SEOAddEdit               metahomepageaddedit.php [NC,L]
+RewriteRule ^SEO                metahomepage.php [NC,L]
+
+RewriteRule ^Login/Login                      Login/login.php [NC,L]
+RewriteRule ^Login/Logout                      Login/logout.php [NC,L]
+RewriteRule ^Login/Forgotpassword              Login/forgotpassword.php [NC,L]
+RewriteRule ^Login/Changepassword              Login/changepassword.php [NC,L]
+
+
+
+
+

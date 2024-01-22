@@ -1,0 +1,39 @@
+RewriteEngine on
+RewriteCond %{HTTPS} !=on
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301,NE]
+Header always set Content-Security-Policy "upgrade-insecure-requests;"
+
+RewriteRule ^Home index.php [NC,L]
+RewriteRule ^About about.php [NC,L]
+RewriteRule ^Catalouge  catelog.php [NC,L]
+RewriteRule ^Contact contact1.php [NC,L]
+RewriteRule ^Site-Map sitemap.php [NC,L]
+
+
+RewriteRule ^Products projects.php [NC,L]
+
+
+RewriteRule ^Blogs   blog-list.php [NC,L]
+
+RewriteRule ^Blog/([^/\.]+)/?$  bblog.php?BlogUrl=$1 [NC,QSA]
+
+
+RewriteRule ^Product/([^/\.]+)/?$  project.php?ProductUrl=$1 [NC,QSA]
+
+RewriteRule ^Type/([^/\.]+)/?$ projects.php?TypeUrl=$1 [NC,QSA]
+RewriteRule ^Finish/([^/\.]+)/?$ projects.php?FinishUrl=$1 [NC,QSA]
+RewriteRule ^Space/([^/\.]+)/?$ projects.php?SpaceUrl=$1 [NC,QSA]
+RewriteRule ^Look/([^/\.]+)/?$ projects.php?LookUrl=$1 [NC,QSA]
+RewriteRule ^Size/([^/\.]+)/?$ projects.php?SizeUrl=$1 [NC,QSA]
+
+
+RewriteRule ^Tiles-Calculator tiles-calculator.php [NC,L]
+RewriteRule ^Technical-Specification technical-specification.php [NC,L]
+RewriteRule ^Packing-Details packing-details.php [NC,L]
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# Set the “ea-php81” package as the default “PHP” programming language.
+<IfModule mime_module>
+  AddHandler application/x-httpd-ea-php81___lsphp .php .php8 .phtml
+</IfModule>
+# php -- END cPanel-generated handler, do not edit
