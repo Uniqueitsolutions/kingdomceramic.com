@@ -85,9 +85,10 @@ if(isset($_POST['update']))
     $oldimgname = $_POST['Old_ogImage1'];
     if($imgname != '')
     {
+        unlink('../../Images/product/' . $oldimgname);
       $file_tmp = $_FILES['ImagePath']['tmp_name'];
       move_uploaded_file($file_tmp, '../../Images/product/' . $imgname);
-      unlink('../../Images/product/' . $oldimgname);
+      
       $productObj->ImagePath=$_FILES['ImagePath']['name'];
     } 
     else
@@ -104,9 +105,10 @@ if(isset($_POST['update']))
     $oldimgname2 = $_POST['Old_ogImage'];
     if($imgname2 != '') 
     {
+      unlink('../../Images/product/' . $oldimgname2);
       $file_tmp2 = $_FILES['MetaOgImage']['tmp_name'];
       move_uploaded_file($file_tmp2, '../../Images/product/' . $imgname2);
-      unlink('../../Images/product/' . $oldimgname2);
+      
       $productObj->MetaOgImage=$_FILES['MetaOgImage']['name'];
     } 
     else
