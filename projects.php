@@ -391,7 +391,7 @@
 
     <script type="text/javascript">
         function scrollToDiv(divId) {
-        var div = document.getElementById(divId);
+        var div = document.getElementById("div1");
         var offsetTop = div.offsetTop;
         var duration = 1000; // Adjust duration as needed (in milliseconds)
         var startTime = performance.now();
