@@ -392,8 +392,27 @@
     <script type="text/javascript">
         function scrollToDiv(divId) {
         var div = document.getElementById(divId);
-        div.scrollIntoView({ behavior: 'smooth' });
-    }
+        var offsetTop = div.offsetTop;
+        var duration = 1000; // Adjust duration as needed (in milliseconds)
+        var startTime = performance.now();
+        var endTime = startTime + duration;
+
+        function scrollStep() {
+            var now = performance.now();
+            var remainingTime = Math.max(endTime - now, 0);
+            var easedTime = 1 - remainingTime / duration;
+            window.scrollTo(0, easedTime * (offsetTop - window.innerHeight));
+            if (remainingTime > 0) {
+                requestAnimationFrame(scrollStep);
+            }
+        }
+
+        requestAnimationFrame(scrollStep);
+      }
+    //     function scrollToDiv(divId) {
+    //     var div = document.getElementById(divId);
+    //     div.scrollIntoView({ behavior: 'smooth' });
+    // }
 
             var selectedValue = null;
             var selectedValue1 = null;
