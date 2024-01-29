@@ -19,10 +19,10 @@ if (mysqli_num_rows($result) == 0) {
                 <div class="image-box-law">
                     <div class="featured-post">
                         <div class="entry-image">
-                            <a href="Product/<?php echo $row['ProductUrl'] ?>">
-                            <img src="Images/product/<?php echo $row['ImagePath'] ?>" 
-                             alt="<?php echo $row['ImageDescription'] ?>" class="<?php echo $class ?> ">
-
+                            <a class="d-flex justify-content-center align-items-center productCard overflow-hidden border-light text-center shadow-lg  flex-column flex-wrap" href="Product/<?php echo $row['ProductUrl'] ?>">
+                                <img src="Images/product/<?php echo $row['ImagePath'] ?>" 
+                                alt="<?php echo $row['ImageDescription'] ?>" class="<?php echo $class ?> ">
+                            </a>
                         </div>
                     </div>
                     <div class="content-law text-center">

@@ -103,7 +103,7 @@
               <div class="portfolio-details-slider swiper " style="width: 100%;">
                 <div class="swiper-wrapper align-items-center borders">
   
-                  <div class="swiper-slide text-center image-container">
+                  <div class="swiper-slide text-center d-flex justify-content-center align-items-center productCard overflow-hidden border-light text-center shadow-lg  flex-column flex-wrap image-container">
                     <img loading="lazy" class="img-fluid" src="Images/product/<?php echo $row1['ImagePath'] ?>" alt="<?php echo $row1['ImageDescription'] ?>" id="img-product" style="">
                   </div>
                 </div>
