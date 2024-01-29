@@ -390,29 +390,33 @@
 <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
 
     <script type="text/javascript">
+      //   function scrollToDiv(divId) {
+      //   var div = document.getElementById("div1");
+      //   var offsetTop = div.offsetTop;
+      //   var duration = 1000; // Adjust duration as needed (in milliseconds)
+      //   var startTime = performance.now();
+      //   var endTime = startTime + duration;
+
+      //   function scrollStep() {
+      //       var now = performance.now();
+      //       var remainingTime = Math.max(endTime - now, 0);
+      //       var easedTime = 1 - remainingTime / duration;
+      //       window.scrollTo(0, easedTime * (offsetTop - window.innerHeight));
+      //       if (remainingTime > 0) {
+      //           requestAnimationFrame(scrollStep);
+      //       }
+      //   }
+
+      //   requestAnimationFrame(scrollStep);
+      // }
         function scrollToDiv(divId) {
-        var div = document.getElementById("div1");
+        var div = document.getElementById(divId);
         var offsetTop = div.offsetTop;
         var duration = 1000; // Adjust duration as needed (in milliseconds)
         var startTime = performance.now();
         var endTime = startTime + duration;
-
-        function scrollStep() {
-            var now = performance.now();
-            var remainingTime = Math.max(endTime - now, 0);
-            var easedTime = 1 - remainingTime / duration;
-            window.scrollTo(0, easedTime * (offsetTop - window.innerHeight));
-            if (remainingTime > 0) {
-                requestAnimationFrame(scrollStep);
-            }
-        }
-
-        requestAnimationFrame(scrollStep);
-      }
-    //     function scrollToDiv(divId) {
-    //     var div = document.getElementById(divId);
-    //     div.scrollIntoView({ behavior: 'smooth' });
-    // }
+        div.scrollIntoView({ behavior: 'smooth' });
+    }
 
             var selectedValue = null;
             var selectedValue1 = null;
