@@ -101,6 +101,7 @@
                      ?>
                       <li>
                         <a
+                        onclick="scrollToDiv('div1')"
                           class=""
                           href="Type/<?php echo $row1['TypeUrl'] ?>"
                           ><?php echo $row1['TypeName'] ?></a
@@ -145,7 +146,9 @@
                          
                      ?>
                       <li>
-                       <a class=""
+                       <a 
+                       onclick="scrollToDiv('div1')"
+                          class=""
                           href="javascript:void(0)"
                           > <?php echo $row2['SizeUrl'] ?></a>
                       </li>
@@ -187,6 +190,7 @@
                      ?>
                       <li>
                         <a
+                        onclick="scrollToDiv('div1')"
                           href="javascript:void(0)"
                           class="finish fn_1"
                         >
@@ -231,6 +235,7 @@
                      ?>
                       <li>
                         <a
+                        onclick="scrollToDiv('div1')"
                           href="javascript:void(0)"
                           data-spaceid="1"
                           data-spacename="Bathroom"
@@ -277,6 +282,7 @@
                      ?>
                       <li>
                         <a
+                          onclick="scrollToDiv('div1')"
                           href="javascript:void(0)"
                           data-effectid="1"
                           data-effectname="<?php echo $row5['LookName'] ?>"
@@ -384,6 +390,11 @@
 <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
 
     <script type="text/javascript">
+        function scrollToDiv(divId) {
+        var div = document.getElementById(divId);
+        div.scrollIntoView({ behavior: 'smooth' });
+    }
+
             var selectedValue = null;
             var selectedValue1 = null;
             var selectedValue2 = null;
