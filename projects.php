@@ -500,7 +500,7 @@ img.style.height = gimgHeight+'px';
                               img.style.transform = 'rotate(90deg)'; // Reset rotation
                                 img.style.marginTop ='-'+(gimgHeight/4)+'px';
                               img.style.marginBottom ='-'+(gimgHeight/4)+'px';
-                             img.style.marginLeft =(gimgHeight/4)+ 'px';
+                            // img.style.marginLeft =(gimgHeight/4)+ 'px';
                             }
                               
                               
