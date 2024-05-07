@@ -71,6 +71,7 @@ echo"
             <li><a class='nav-link px-2' target='_blank'href='"?> <?php echo $row['InstagramLink']?><?php echo"' ><span class='fab fa-instagram' data-fa-transform='shrink-2'></span></a></li>
             "?> <?php } ?>
             <?php echo"
+             <li><a class='nav-link px-2' target='_blank'href='https://www.linkedin.com/company/kingdom-ceramic/' ><span class='fab fa-linkedin' data-fa-transform='shrink-2'></span></a></li>
             </ul>
         </div>
       </nav>
