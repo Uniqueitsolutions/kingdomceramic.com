@@ -30,6 +30,7 @@ echo'
             <a href="'?> <?php echo $row['TwitterLink']?><?php echo'" class="d-flex align-items-center justify-content-center"><i class="bi bi-whatsapp"></i></a>
               <a href="'?> <?php echo $row['FacebookLink']?><?php echo'" class="d-flex align-items-center justify-content-center"><i class="bi bi-facebook"></i></a>
               <a href="'?> <?php echo $row['InstagramLink']?><?php echo'" class="d-flex align-items-center justify-content-center"><i class="bi bi-instagram"></i></a>
+             <a target="_black" href="https://www.linkedin.com/company/kingdom-ceramic/" class="d-flex align-items-center justify-content-center"><i class="bi bi-linkedin"></i></a>
              
             </div>
         </div>
